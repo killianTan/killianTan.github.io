@@ -17,7 +17,15 @@ Prior to joining McGill, I earned my Master Degree in Marketing Analytics from t
 
 <hr>
 
-<h1>EDUCATION</h1>
+<h2>RESEARCH INTERESTS</h2>
+
+- Ads
+- Healthcare 
+- Digital Platforms
+
+<hr>
+
+<h2>EDUCATION</h2>
 
 ***MSc** in Marketing Analytics*, Dec 2025<br>Simon Business School, University of Rochester, Rochester NY
 
