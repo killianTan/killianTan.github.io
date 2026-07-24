@@ -33,9 +33,6 @@ Prior to joining McGill, I earned my Master Degree in Marketing Analytics from t
 
 <hr>
 
-If you are interested in my research or would like to explore potential collaborations, please feel free to reach out.
+If you are interested in my research or would like to explore potential collaborations, please feel free to reach out!
 
-#Getting started
-#======
 
-#1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
