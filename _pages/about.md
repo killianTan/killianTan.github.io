@@ -31,6 +31,6 @@ Prior to joining McGill, I earned my Master Degree in Marketing Analytics from t
 
 <hr>
 
-<p style="color: #d9534f; font-style: italic; font-weight: bold;">
+<p style="color: #d9534f !important; font-style: italic; font-weight: bold;">
 If you are interested in my research or would like to explore potential collaborations, please feel free to reach out!
 </p>
