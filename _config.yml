@@ -23,7 +23,7 @@ repository               : "killianTan/killianTan.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "个人照.jpeg"
   name             : "Killian Jialong Tan"
   pronouns         : # example: "she/her"  
   bio              : "PhD Student @ Desautels Faculty of Management, McGill University"
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "www.linkedin.com/in/killian-jialong-tan-1415ab217"
+  linkedin         : "killian-jialong-tan-1415ab217"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
