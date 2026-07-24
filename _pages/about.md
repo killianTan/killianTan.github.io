@@ -15,7 +15,6 @@ My research interests lie at the intersection of advertising, healthcare marketi
 
 Prior to joining McGill, I earned my Master Degree in Marketing Analytics from the Simon Business School at the University of Rochester and Bachelor Degree in Tourism Business Management from Macao University of Tourism.
 
-<hr>
 
 <h2>RESEARCH INTERESTS</h2>
 
@@ -23,7 +22,6 @@ Prior to joining McGill, I earned my Master Degree in Marketing Analytics from t
 - Healthcare 
 - Digital Platforms
 
-<hr>
 
 <h2>EDUCATION</h2>
 
