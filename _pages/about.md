@@ -1,15 +1,17 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "ABOUT ME"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+Hihi, I am a PhD student in Marketing at the Desautels Faculty of Management, McGill University, specializing in Quantitative Marketing.
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+My research interests lie at the intersection of advertising, healthcare marketing, and digital platforms. My previous research primarily focused on tourism marketing and advertising effectiveness. Currently, my doctoral research focuses on how firms and consumers interact within evolving digital environments using quantitative methods.
+
+Prior to joining McGill, I earned my master degree in Marketing Analytics from the Simon Business School at the University of Rochester and bachelor degree in Tourism Business Management from Macao University of Tourism.
 
 A data-driven personal website
 ======
