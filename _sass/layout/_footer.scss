@@ -10,7 +10,7 @@
   float: left;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0.5em !important;
+  margin-top: 3em;
   width: 100%;
   clear: both;
 
@@ -33,7 +33,7 @@
     margin-right: auto;
     margin-top: 1em;
     max-width: 100%;
-    padding: 0 0.5em 0.2em!important;
+    padding: 0.2em 0.5em 0.2em!important;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
