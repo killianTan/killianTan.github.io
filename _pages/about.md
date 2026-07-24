@@ -15,8 +15,8 @@ My research interests lie at the intersection of advertising, healthcare marketi
 
 Prior to joining McGill, I earned my Master Degree in Marketing Analytics from the Simon Business School at the University of Rochester and Bachelor Degree in Tourism Business Management from Macao University of Tourism.
 
-<h1>EDUCATION！</h1>
-======
+<h1>EDUCATION</h1>
+<hr>
 MSc in Marketing Analytics, Dec 2025<br>Simon Business School, University of Rochester, Rochester NY
 
 BSc in Tourism Business Management, June 2024<br>Faculty of Creative Tourism and Intelligent Technologies, Macao University of Tourism, Macao SAR
