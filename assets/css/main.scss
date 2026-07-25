@@ -39,58 +39,34 @@
 ;
 
 /* ==========================================================================
-   在顶部导航栏右上角添加 McGill Logo
+   右上角 McGill Logo 完美适配（不影响侧边栏与布局）
    ========================================================================== */
 
-/* 1. 针对桌面端和大屏幕 (超过 1024px) */
+/* 仅在桌面端显示 Logo，避免撑开移动端导航 */
 @media (min-width: 64em) {
-  .masthead {
-    /* 在导航栏容器右侧留出空间 */
-    padding-right: 180px !important; /* 根据 Logo 宽度调整这个值 */
-    position: relative; /* 允许内部元素绝对定位 */
-    
-    &::after {
-      content: "";
-      position: absolute;
-      right: 20px; /* 距离右侧的距离 */
-      top: 50%; /* 垂直居中初始位置 */
-      transform: translateY(-50%); /* 配合 top 完美垂直居中 */
-      
-      /* 👈 关键点：Logo 图片路径，请确保文件名正确 */
-      background-image: url('../images/mcgill-logo.png'); 
-      
-      background-size: contain; /* 保持图片比例 */
-      background-repeat: no-repeat;
-      background-position: center;
-      
-      /* 👈 关键点：调整 Logo 显示的大小 */
-      width: 150px; /* Logo 宽度 */
-      height: 50px; /* Logo 高度 */
-      display: block;
-      opacity: 0.9; /* 稍微透明一点，显得高级 */
-    }
-  }
-}
-
-/* 2. 针对移动端 (当导航栏变成竖向列表时) */
-@media (max-width: 64em) {
-  .masthead {
+  .masthead__menu {
     position: relative;
-    padding-bottom: 60px !important; /* 在底部留出空间放 Logo */
+    padding-right: 140px !important; /* 给右侧 Logo 预留空间 */
+  }
+
+  .masthead__menu::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 10px; /* 放在底部 */
-      left: 50%; /* 水平居中 */
-      transform: translateX(-50%); /* 配合 left 完美水平居中 */
-      background-image: url('../images/mcgill-logo.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 120px; /* 移动端稍微小一点 */
-      height: 40px;
-      display: block;
-    }
+    /* 图片路径，请确保文件名与 assets/images/ 中的文件名一致 */
+    background-image: url('../images/mcgill-logo.png');
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    
+    width: 120px;  /* Logo 宽度 */
+    height: 35px;  /* Logo 高度，控制在这个高度不会撑开顶部栏 */
+    display: block;
+    pointer-events: none; /* 防止遮挡右侧点击事件 */
   }
 }
 
