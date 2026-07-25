@@ -38,35 +38,5 @@
     "layout/json_cv"
 ;
 
-/* ==========================================================================
-   右上角 McGill Logo 完美适配（不影响侧边栏与布局）
-   ========================================================================== */
 
-/* 仅在桌面端显示 Logo，避免撑开移动端导航 */
-@media (min-width: 64em) {
-  .masthead__menu {
-    position: relative;
-    padding-right: 140px !important; /* 给右侧 Logo 预留空间 */
-  }
-
-  .masthead__menu::after {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    
-    /* 图片路径，请确保文件名与 assets/images/ 中的文件名一致 */
-    background-image: url('../images/mcgill-logo.png');
-    
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center right;
-    
-    width: 120px;  /* Logo 宽度 */
-    height: 35px;  /* Logo 高度，控制在这个高度不会撑开顶部栏 */
-    display: block;
-    pointer-events: none; /* 防止遮挡右侧点击事件 */
-  }
-}
 
