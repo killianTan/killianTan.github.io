@@ -31,3 +31,34 @@ main:
     
 # - title: "Guide"
 #   url: /markdown/
+
+/* ==========================================================================
+   右上角 McGill Logo（直接注入导航栏样式库）
+   ========================================================================== */
+
+/* 仅在电脑桌面端显示 Logo */
+@media (min-width: 64em) {
+  .masthead__menu {
+    position: relative;
+    padding-right: 150px !important; /* 给右侧 Logo 腾出空间 */
+  }
+
+  .masthead__menu::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    /* 确认图片保存在 images/mcgill-logo.png */
+    background-image: url('../images/mcgill-logo.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    
+    width: 130px; /* Logo 宽度 */
+    height: 38px; /* Logo 高度 */
+    display: block;
+    pointer-events: none;
+  }
+}
