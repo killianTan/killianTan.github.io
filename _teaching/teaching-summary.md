@@ -17,7 +17,7 @@ author_profile: true
 * **Course Name** (Master Level) — *Upcoming / Term Year*
   * Desautels Faculty of Management, McGill University
 
----
+
 
 ## Master's Era 
 
