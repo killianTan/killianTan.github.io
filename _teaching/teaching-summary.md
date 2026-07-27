@@ -3,6 +3,7 @@ title: "Teaching Experience"
 collection: teaching
 permalink: /teaching/
 author_profile: true
+read_time: false
 ---
 
 ## Doctoral Era 
