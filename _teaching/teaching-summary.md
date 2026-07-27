@@ -4,6 +4,7 @@ collection: teaching
 permalink: /teaching/
 author_profile: true
 read_time: false
+share: false
 ---
 
 ## Doctoral Era 
