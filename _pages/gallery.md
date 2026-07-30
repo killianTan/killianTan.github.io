@@ -1,7 +1,7 @@
 ---
 layout: single
 title: " "
-permalink: /gallery/
+permalink: /Gallery/
 author_profile: true
 share: false
 ---
