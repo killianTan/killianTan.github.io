@@ -46,12 +46,11 @@ share: false
   <a href="/images/hefei2.jpg"><img src="/images/hefei2.jpg" alt="Hefei 2"></a>
 </div>
 
-<!-- 加载 PhotoSwipe 交互脚本 -->
+{% raw %}
 <script type="module">
   import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.js';
 
   document.addEventListener("DOMContentLoaded", () => {
-    // 自动获取图片的真实宽高以实现完美无损缩放
     const galleryLinks = document.querySelectorAll('.photo-gallery a');
     galleryLinks.forEach(link => {
       const img = link.querySelector('img');
@@ -68,7 +67,6 @@ share: false
       }
     });
 
-    // 初始化画廊
     const lightbox = new PhotoSwipeLightbox({
       gallery: '.photo-gallery',
       children: 'a',
@@ -77,3 +75,4 @@ share: false
     lightbox.init();
   });
 </script>
+{% endraw %}
