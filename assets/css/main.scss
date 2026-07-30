@@ -43,3 +43,21 @@
   min-height: calc(100vh - 160px);
 }
 
+/* Gallery 横向滑动相册样式 */
+.photo-gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+.photo-gallery img {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 80%;
+  max-width: 400px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
