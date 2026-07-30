@@ -38,39 +38,73 @@
     "layout/json_cv"
 ;
 
-/* 全局固定页脚：强制主内容区最小高度为屏幕高度，防止内容少时页脚上浮 */
-#main {
-  min-height: calc(100vh - 160px);
+/* === Gallery 横向滑动相册修复 === */
+.photo-gallery {
+  display: flex !important;
+  flex-direction: row !important;
+  overflow-x: auto !important;
+  gap: 12px;
+  padding-bottom: 12px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* Gallery 横向滑动相册样式 */
-.photo-gallery {
-  display: flex;
-  overflow-x: auto;
-  gap: 12px;
-  padding-bottom: 10px;
-  scroll-snap-type: x mandatory;
-}
-.photo-gallery img {
+/* 确保 a 标签与 img 标签同步不变形、可滑动 */
+.photo-gallery a.popup-image {
   scroll-snap-align: start;
-  flex: 0 0 auto;
-  width: 80%;
-  max-width: 400px;
-  height: 260px;
+  flex: 0 0 auto !important;
+  display: block;
+}
+
+.photo-gallery img {
+  width: 80vw;
+  max-width: 360px;
+  height: 240px;
   object-fit: cover;
   border-radius: 6px;
+  display: block;
 }
 
-/* === Magnific Popup CSS (图片点击弹窗) === */
-.mfp-bg { top:0; left:0; width:100%; height:100%; z-index:1042; overflow:hidden; position:fixed; background:#0b0b0b; opacity:.8; }
-.mfp-wrap { top:0; left:0; width:100%; height:100%; z-index:1043; position:fixed; outline:0!important; -webkit-backface-visibility:hidden; }
-.mfp-container { text-align:center; position:absolute; width:100%; height:100%; left:0; top:0; padding:0 8px; }
-.mfp-container:before { content:''; display:inline-block; height:100%; vertical-align:middle; }
-.mfp-content { position:relative; display:inline-block; vertical-align:middle; margin:0 auto; text-align:left; z-index:1045; }
-.mfp-close { position:absolute; top:0; right:0; width:44px; height:44px; line-height:44px; font-family:Arial,Baskerville,monospace; font-size:28px; text-align:center; padding:0; color:#fff; font-weight:700; cursor:pointer; background:0 0; border:0; opacity:.65; }
-.mfp-close:hover { opacity:1; }
-img.mfp-img { width:auto; max-width:100%; height:auto; display:block; margin:0 auto; padding:40px 0; }
-.mfp-with-zoom .mfp-container, .mfp-with-zoom.mfp-bg { opacity:0; -webkit-transition:all .3s ease-out; transition:all .3s ease-out; }
-.mfp-with-zoom.mfp-ready .mfp-container { opacity:1; }
-.mfp-with-zoom.mfp-ready.mfp-bg { opacity:.8; }
-.mfp-with-zoom.mfp-removing .mfp-container, .mfp-with-zoom.mfp-removing.mfp-bg { opacity:0; }
+/* === Magnific Popup 弹窗浮层与关闭按钮修复 === */
+.mfp-bg {
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 99999; overflow: hidden; position: fixed;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.mfp-wrap {
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 100000; position: fixed; outline: none !important;
+}
+
+.mfp-container {
+  text-align: center; position: absolute;
+  width: 100%; height: 100%; left: 0; top: 0;
+  padding: 0 10px; box-sizing: border-box;
+}
+
+.mfp-container:before {
+  content: ''; display: inline-block;
+  height: 100%; vertical-align: middle;
+}
+
+.mfp-content {
+  position: relative; display: inline-block;
+  vertical-align: middle; margin: 0 auto;
+  text-align: left; z-index: 100001;
+}
+
+img.mfp-img {
+  width: auto; max-width: 90vw; max-height: 85vh;
+  display: block; margin: 0 auto; padding: 20px 0;
+}
+
+/* 右上角关闭按钮 (×) */
+.mfp-close {
+  position: absolute; top: 10px; right: 10px;
+  width: 44px; height: 44px; line-height: 44px;
+  font-size: 32px; color: #fff; text-align: center;
+  cursor: pointer; background: transparent; border: none;
+  z-index: 100002;
+}
+.mfp-close:hover { color: #ccc; }
