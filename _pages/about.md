@@ -25,6 +25,8 @@ Prior to joining McGill, I earned my Master Degree in Marketing Analytics from t
 
 <h2>EDUCATION</h2>
 
+***PhD** in Management(Marketing Track)*, Aug 2026 - Present<br>Desautels Faculty of Management, McGill University, Montreal QC
+
 ***MSc** in Marketing Analytics*, Dec 2025<br>Simon Business School, University of Rochester, Rochester NY
 
 ***BSc** in Tourism Business Management*, June 2024<br>Faculty of Creative Tourism and Intelligent Technologies, Macao University of Tourism, Macao SAR
