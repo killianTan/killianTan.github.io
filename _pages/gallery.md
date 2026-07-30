@@ -1,12 +1,12 @@
 ---
 layout: single
-title: "Gallery"
+title: ""
 permalink: /gallery/
 author_profile: true
 share: false
 ---
 
-A visual record of my journey across different cities.
+***A visual record of my journey across different cities👇***
 
 
 ---
