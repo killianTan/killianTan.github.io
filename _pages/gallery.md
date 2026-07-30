@@ -46,33 +46,31 @@ share: false
   <a href="/images/hefei2.jpg"><img src="/images/hefei2.jpg" alt="Hefei 2"></a>
 </div>
 
-{% raw %}
-<script type="module">
-  import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.js';
+<script type="module" markdown="0">
+import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.js';
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const galleryLinks = document.querySelectorAll('.photo-gallery a');
-    galleryLinks.forEach(link => {
-      const img = link.querySelector('img');
-      if (img) {
-        if (img.complete) {
+document.addEventListener("DOMContentLoaded", () => {
+  const galleryLinks = document.querySelectorAll('.photo-gallery a');
+  galleryLinks.forEach(link => {
+    const img = link.querySelector('img');
+    if (img) {
+      if (img.complete) {
+        link.setAttribute('data-pswp-width', img.naturalWidth || 1200);
+        link.setAttribute('data-pswp-height', img.naturalHeight || 800);
+      } else {
+        img.onload = () => {
           link.setAttribute('data-pswp-width', img.naturalWidth || 1200);
           link.setAttribute('data-pswp-height', img.naturalHeight || 800);
-        } else {
-          img.onload = () => {
-            link.setAttribute('data-pswp-width', img.naturalWidth || 1200);
-            link.setAttribute('data-pswp-height', img.naturalHeight || 800);
-          };
-        }
+        };
       }
-    });
-
-    const lightbox = new PhotoSwipeLightbox({
-      gallery: '.photo-gallery',
-      children: 'a',
-      pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.js')
-    });
-    lightbox.init();
+    }
   });
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '.photo-gallery',
+    children: 'a',
+    pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.js')
+  });
+  lightbox.init();
+});
 </script>
-{% endraw %}
