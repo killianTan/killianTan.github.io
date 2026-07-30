@@ -38,6 +38,11 @@
     "layout/json_cv"
 ;
 
+/* 全局固定页脚：强制主内容区最小高度，防止内容少时页脚上浮 */
+#main {
+  min-height: calc(100vh - 160px) !important;
+}
+
 /* === PhotoSwipe 全局弹窗样式加载 === */
 @import url("https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css");
 
