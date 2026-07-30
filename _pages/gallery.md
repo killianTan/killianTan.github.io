@@ -8,25 +8,6 @@ share: false
 
 A visual record of my journey across different cities.
 
-<style>
-/* 简易横向滑动相册样式 */
-.photo-gallery {
-  display: flex;
-  overflow-x: auto;
-  gap: 12px;
-  padding-bottom: 10px;
-  scroll-snap-type: x mandatory;
-}
-.photo-gallery img {
-  scroll-snap-align: start;
-  flex: 0 0 auto;
-  width: 80%;
-  max-width: 400px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-</style>
 
 ---
 
@@ -41,6 +22,8 @@ A visual record of my journey across different cities.
 <div class="photo-gallery">
   <img src="/images/rochester1.jpg" alt="Rochester 1">
   <img src="/images/rochester2.jpg" alt="Rochester 2">
+  <img src="/images/rochester3.jpg" alt="Rochester 3">
+  <img src="/images/rochester4.jpg" alt="Rochester 4">
 </div>
 
 ---
