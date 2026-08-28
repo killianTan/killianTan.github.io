@@ -16,10 +16,11 @@ read_time: false
 -->
 
 ### Teaching Assistant
-* **Course Name** (Master's Level) — *Upcoming / Term Year*
+* **Retail Science and Data Analytics** (Master's Level) — *Fall 2026*
   * Desautels Faculty of Management, McGill University
 
-
+* **Marketing Analytics** (Bachelor's Level) — *Fall 2026*
+  * Desautels Faculty of Management, McGill University
 
 ## Master's Era 
 
