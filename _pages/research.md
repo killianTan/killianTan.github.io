@@ -8,7 +8,7 @@ share: false
 
 ## Doctoral Research
 
-* **Title TBD** — *In Progress*
+* **The Social Network Effect of Gaming Platforms** — *In Progress*
 
 
 
